@@ -44,6 +44,9 @@ ul.center-menulist li a {
   padding: 10px 10px;
   display: block;
 }
+ul.center-menulist li.active a {
+  color: #f5efa5;
+}
 /* Hero section */
 .swiper.hero-section::before {
   content: "";
@@ -496,6 +499,11 @@ article.standard-box .bottom-block .link-box span svg {
   top: calc(50% - 100px);
 }
 
+.animal-product.product-swiper-section::before {
+  background-image: url("../images/AnimalHealth_Page/AHP_Div3-1.jpg");
+
+  mix-blend-mode: multiply;
+}
 /* .product-swiper-section::after {
   content: "";
   position: absolute;
@@ -969,3 +977,485 @@ ul.country-pill {
   text-transform: uppercase;
   padding: 8px 16px;
 }
+
+/* Human page */
+.video-hero-section-box {
+  height: 100%;
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem 0;
+}
+.video-hero-section-box .video-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  inset: 0;
+}
+.video-hero-section-box .video-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    8deg,
+    #0b5b42f2 8.55%,
+    #558d72b3 60.95%,
+    #a1c1a4b3 84.65%,
+    #faffe0b3 109.89%
+  );
+}
+.video-hero-section-box .video-box .herosection-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.video-hero-section {
+  position: relative;
+  z-index: 1;
+  height: calc(60vh - 5vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .video-hero-section {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .video-hero-section {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .video-hero-section {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-hero-section {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .video-hero-section {
+    max-width: 1320px;
+  }
+}
+
+.video-hero-section img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
+.video-hero-section .content-block .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.video-hero-section .content-block .title-box h4 {
+  color: #f5efa5;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+.video-hero-section .content-block .title-box h5 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.video-hero-section .content-block .title-box p {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 915px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .video-hero-section .content-block .title-box h4 {
+    font-size: 31px;
+  }
+  .video-hero-section .content-block .title-box h5 {
+    font-size: 24px;
+  }
+}
+
+.human-tab-section {
+  background: #faffe0;
+  padding: 40px 0;
+}
+.human-tab-section .human-tab-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 860px) {
+  .human-tab-section .human-tab-block {
+    flex-direction: column;
+  }
+}
+
+.human-tab-section .human-tab-block ul.nav.nav-tabs {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.human-tab-section .human-tab-block ul.nav.nav-tabs {
+  width: 40%;
+  border: none;
+}
+.human-tab-section .human-tab-block .tab-content {
+  width: 60%;
+}
+@media screen and (max-width: 860px) {
+  .human-tab-section .human-tab-block ul.nav.nav-tabs {
+    width: 100%;
+  }
+  .human-tab-section .human-tab-block .tab-content {
+    width: 100%;
+  }
+}
+
+.human-tab-section .human-tab-block .nav-tabs .nav-link {
+  color: #02120d;
+  font-family: Lato;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.35;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 10px 0;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+}
+.human-tab-section .human-tab-block .nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #02120d;
+  opacity: 1;
+  font-family: Lato;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 10px 0;
+  border-bottom: 2px solid #0b5940;
+  padding: 10px 0;
+  position: relative;
+}
+.human-tab-section .human-tab-block .nav-tabs .nav-link.active::before {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -6px;
+  height: 12px;
+  width: 12px;
+  background: #0b5940;
+  border-radius: 50rem;
+}
+.human-tab-section .human-tab-block ul.nav.nav-tabs li button span {
+  font-size: 18px;
+}
+@media screen and (max-width: 424px) {
+  .human-tab-section .human-tab-block .nav-tabs .nav-link,
+  .human-tab-section .human-tab-block .nav-tabs .nav-link.active {
+    font-size: 22px;
+  }
+  .human-tab-section .human-tab-block ul.nav.nav-tabs li button span {
+    font-size: 14px;
+  }
+}
+.human-tab-section article.human-health-card {
+  background: linear-gradient(
+    48deg,
+    #0b5940 8.55%,
+    #558d72 60.95%,
+    #a1c1a4 84.65%,
+    #faffe0 109.89%
+  );
+  box-shadow: 4px 10px 7.5px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 50px;
+  width: 100%;
+  max-width: 570px;
+}
+@media screen and (max-width: 991px) {
+  .human-tab-section article.human-health-card {
+    padding: 30px;
+  }
+}
+article.human-health-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+article.human-health-card .header h4 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+article.human-health-card .header .pill-box {
+  border-radius: 5px;
+  opacity: 0.35;
+  background: #0b5940;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+article.human-health-card .body {
+  padding: 60px 0;
+}
+article.human-health-card .body ul.dieseas-images {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+article.human-health-card .body ul.dieseas-images li {
+  text-align: center;
+}
+article.human-health-card .body ul.dieseas-images li img {
+  height: 130px;
+  width: 130px;
+}
+@media screen and (max-width: 991px) {
+  article.human-health-card .body {
+    padding: 40px 0;
+  }
+  article.human-health-card .body ul.dieseas-images li img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+article.human-health-card .footer h3 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+article.human-health-card .footer button.buy-btn {
+  border-radius: 5px;
+  background: #f5efa5;
+  padding: 8px 12px;
+  width: 100%;
+  margin-top: 15px;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid #f5efa6;
+  color: #0b5940;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 424px) {
+  .human-tab-section article.human-health-card {
+    padding: 20px;
+  }
+  article.human-health-card .header h4 {
+    font-size: 28px;
+  }
+  article.human-health-card .header .pill-box {
+    font-size: 12px;
+    padding: 5px 7px;
+  }
+  article.human-health-card .body {
+    padding: 30px 0;
+  }
+  article.human-health-card .body ul.dieseas-images li img {
+    height: 80px;
+    width: 80px;
+  }
+  article.human-health-card .footer h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 375px) {
+  article.human-health-card .body ul.dieseas-images li img {
+    height: 70px;
+    width: 70px;
+  }
+}
+/* Animal page */
+
+section.animal-info-section {
+  background: #faffe0;
+  padding: 50px 0;
+}
+section.animal-info-section h1 {
+  color: #0b5940;
+  text-align: center;
+  font-family: BIZ UDMincho;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+section.animal-info-section h1.left-quotes {
+  transform: rotate(180deg);
+  text-align: right !important;
+  margin-bottom: 30px;
+}
+section.animal-info-section p {
+  color: #0b5940;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.animal-info-section p b {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 900;
+}
+/* 
+.complete-the-look-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.complete-the-look-box .complete-look-card {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.complete-the-look-box .complete-look-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 525px) {
+  .complete-the-look-box .complete-look-card .product-detail {
+    flex-direction: column;
+  }
+}
+.complete-the-look-box .complete-look-card .product-detail .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.complete-the-look-box .complete-look-card .product-detail .product-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.complete-the-look-box .complete-look-card .product-detail .product-info h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.complete-the-look-box .complete-look-card .product-detail .product-price h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.complete-the-look-box .complete-look-card .ctl-product-det select {
+  height: 38px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #998f8a;
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 3px;
+
+  outline: 0 !important;
+  box-shadow: none;
+}
+.complete-the-look-box
+  .complete-look-card
+  .ctl-product-det
+  select
+  option:disabled {
+  color: #9b918b;
+}
+
+.complete-the-look-box .complete-look-card .ctl-product-det button {
+  background: #202020;
+  color: #fff;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #202020;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.complete-the-look-box .complete-look-card .ctl-product-img img {
+  width: 100%;
+  object-fit: cover;
+} */
