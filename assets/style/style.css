@@ -1091,7 +1091,7 @@ ul.country-pill {
   z-index: 0;
   inset: 0;
 }
-.video-hero-section-box .video-box::before {
+/* .video-hero-section-box .video-box::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1102,7 +1102,7 @@ ul.country-pill {
     #a1c1a4b3 84.65%,
     #faffe0b3 109.89%
   );
-}
+} */
 .video-hero-section-box .video-box .herosection-video {
   height: 100%;
   width: 100%;
