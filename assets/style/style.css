@@ -10,10 +10,11 @@ header {
 .header-box {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  align-items: center;
+  padding: 12px 0;
 }
 .header-box img.header-logo {
-  height: 35px;
+  height: 45px;
 }
 .header-box .menu-icon svg {
   height: 18px;
@@ -75,6 +76,7 @@ ul.center-menulist li.active a {
     height: 100%;
     min-height: unset;
     max-height: unset;
+    padding-bottom: 30px;
   }
 }
 .swiper.hero-section .swiper-slide {
@@ -620,6 +622,35 @@ article.standard-box .bottom-block .link-box span svg {
 .swiper.product-swiper .swiper-button-prev:after {
   content: unset;
 }
+@media screen and (max-width: 540px) {
+  .swiper-btn-group-health-product {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 90px;
+    position: relative;
+    z-index: 3;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-btn-group-health-product .swiper-button-next {
+    height: 35px;
+    width: 54px;
+    top: -15px;
+    left: initial;
+    right: 0;
+  }
+
+  .swiper-btn-group-health-product .swiper-button-prev {
+    height: 35px;
+    width: 54px;
+    top: -15px;
+    left: 0;
+    right: initial;
+  }
+}
+
 .product-card {
   position: relative;
   background: #faffe0;
@@ -716,6 +747,7 @@ section.content-img-section {
   background: #faffe0;
   position: relative;
 }
+
 section.content-img-section .content-img-section-img {
   width: 50%;
   display: table;
@@ -791,23 +823,78 @@ section.content-img-section .content-img-section-img {
     font-size: 31px;
   }
 }
+section.content-img-section.mobile-sec-box {
+  display: none;
+}
 @media screen and (max-width: 397px) {
-  .content-img-section .content-box h1 {
-    max-width: 400px;
+  .content-img-section .content-box h1 .main::before {
+    width: 200px;
+    height: 24px;
+    bottom: -70px;
+    right: 30px;
+    background: #f5efa6;
   }
+  .content-img-section .go-btn,
+  .content-img-section .content-box p {
+    display: none;
+  }
+  section.content-img-section .content-img-section-img {
+    height: 220px;
+  }
+
+  /* .content-img-section .content-box h1 {
+    max-width: 400px;
+  } */
   /* .content-img-section .content-box h1 .main {
     font-size: 28px;
   } */
-  .content-img-section .content-box h1 .main::before {
+  /* .content-img-section .content-box h1 .main::before {
     right: 30px;
     bottom: -67px;
     width: 140px;
     height: 20px;
-  }
+  } */
   /* .content-img-section .content-box h1 .sub {
     font-size: 28px;
   } */
+  section.content-img-section.mobile-sec-box {
+    display: block;
+  }
+  section.content-img-section.mobile-sec-box .content-img-section-img {
+    opacity: 0;
+  }
+
+  .content-img-section.mobile-sec-box .content-box p {
+    display: block;
+    text-align: center;
+  }
+  section.content-img-section.discover-mobile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #16362a;
+  }
+  .content-img-section.discover-mobile .content-box h1 .main,
+  .content-img-section.discover-mobile .content-box h1 .sub {
+    color: #ffffff;
+  }
+  section.content-img-section.mobile-sec-box .go-btn {
+    display: block;
+    width: auto;
+    border-radius: 7px;
+    height: auto;
+    width: auto;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: #f5efa5;
+    background: #0a5940;
+  }
+
+  section.content-img-section.mobile-sec-box .go-btn svg * {
+    stroke: #f5efa5;
+  }
 }
+
 .content-img-section p {
   color: #000;
   font-family: Lato;
